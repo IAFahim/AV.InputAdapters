@@ -1,0 +1,27 @@
+{
+  "name": "com.av.inputadapters",
+  "version": "1.0.0",
+  "displayName": "AV Input Adapters",
+  "description": "Input adapter utilities for abstracting and routing Unity input system events.",
+  "unity": "2021.3",
+  "author": {
+    "name": "IAFahim",
+    "email": "iafahim.dev@gmail.com",
+    "url": "https://github.com/IAFahim"
+  },
+  "keywords": [
+    "input",
+    "adapters",
+    "controls",
+    "abstraction"
+  ],
+  "license": "MIT",
+  "category": "Utilities",
+  "dependencies": {},
+  "samples": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAFahim/AV.InputAdapters"
+  },
+  "licensesUrl": "https://github.com/IAFahim/AV.InputAdapters/blob/main/LICENSE.md"
+}
