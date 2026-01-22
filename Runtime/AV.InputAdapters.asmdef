@@ -1,0 +1,6 @@
+{
+  "name": "AV.InputAdapters",
+  "references": [
+      "Unity.InputSystem"
+  ]
+}
