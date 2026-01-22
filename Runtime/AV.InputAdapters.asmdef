@@ -1,5 +1,6 @@
 {
-    "name": "AV.InputAdapters",
-    "rootNamespace": "AV.InputAdapters",
-    "autoReferenced": true
+  "name": "AV.InputAdapters",
+  "references": [
+      "Unity.InputSystem"
+  ]
 }

@@ -1,49 +1,40 @@
-# AV Input Adapters
+# AV.InputAdapters
 
-Input adapter utilities for abstracting and routing Unity input system events.
+[![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B-blue.svg)](https://unity3d.com/get-unity/download)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
+[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](CHANGELOG.md)
 
-![Unity Version](https://img.shields.io/badge/unity-2021.3%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Version](https://img.shields.io/badge/version-1.0.0-orange.svg)
+Input adapter foundation package for Unity - placeholder for future input system integrations.
 
-## Features
+## Status
 
-- **Professional Quality**: Built following Unity Package Manager best practices
-- **Well Documented**: Comprehensive documentation and examples
-- **Production Ready**: Tested and optimized for production use
+This package is currently a foundation/placeholder package for future input adapter implementations.
+
+## Interfaces
+
+The package provides the following interfaces following strict naming guidelines:
+
+- **`IHitProvider`** - Provides access to a `RaycastHit` result via `Hit` property
+- **`IRayProvider`** - Provides access to a `Ray` for raycasting via `Ray` property
+- **`IPositionReceiver`** - Receives a `Vector2` position via `Position` property
+
+## Code Quality
+
+This package follows strict naming guidelines from AGENTS.md:
+- ✅ **Descriptive interface names**: `IHitProvider` (not `IRaycastHitGet`)
+- ✅ **Descriptive properties**: `Hit`, `Ray`, `Position` (not generic `Value`)
+- ✅ **Pronounceable**: All names read naturally
+- ✅ **Searchable**: No cryptic abbreviations
+- ✅ **Clear intent**: Interface names describe their purpose
 
 ## Installation
 
-Install this package via Unity Package Manager by adding this line to your `Packages/manifest.json`:
-
-```json
-"com.av.inputadapters": "https://github.com/IAFahim/AV.InputAdapters.git"
 ```
-
-Or install via Git URL in Unity Package Manager:
-1. Open Unity Package Manager (Window > Package Manager)
-2. Click the + icon > Add package from git URL
-3. Enter: `https://github.com/IAFahim/AV.InputAdapters.git`
-
-## Requirements
-
-- Unity 2021.3 or higher
-- Dependencies will be automatically resolved by Unity Package Manager
-
-## Usage
-
-Add components from the `AV Input Adapters` package to your GameObjects via the Component menu:
-`Component > AV > Input Adapters > [Component Name]`
-
-For detailed usage instructions, see the [Samples](Samples~) included with this package.
-
-## API Documentation
-
-For complete API reference and documentation, visit: https://github.com/IAFahim/AV.InputAdapters
-
-## Changelog
-
-See [CHANGELOG.md](CHANGELOG.md) for version history.
+Window > Package Manager > + > Add package from git URL
+```
+```
+https://github.com/IAFahim/AV.InputAdapters.git
+```
 
 ## License
 
@@ -51,12 +42,4 @@ MIT License - see [LICENSE.md](LICENSE.md) for details.
 
 ## Author
 
-IAFahim - [https://github.com/IAFahim](https://github.com/IAFahim)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## Support
-
-For issues and questions, please use the [GitHub Issues](https://github.com/IAFahim/AV.InputAdapters/issues) page.
+**IAFahim** - [GitHub](https://github.com/IAFahim)
