@@ -1,45 +1,35 @@
 # AV.InputAdapters
 
-[![Unity Version](https://img.shields.io/badge/Unity-2022.3%2B-blue.svg)](https://unity3d.com/get-unity/download)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
-[![Version](https://img.shields.io/badge/Version-1.0.0-orange.svg)](CHANGELOG.md)
+![Header](documentation_header.svg)
 
-Input adapter foundation package for Unity - placeholder for future input system integrations.
+[![Unity](https://img.shields.io/badge/Unity-2022.3%2B-000000.svg?style=flat-square&logo=unity)](https://unity.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE.md)
 
-## Status
+Foundation interface definitions for input abstraction.
 
-This package is currently a foundation/placeholder package for future input adapter implementations.
+## ✨ Features
 
-## Interfaces
+- **Decoupled Input**: Defines interfaces for common input patterns.
+- **IHitProvider**: Interface for getting RaycastHit results.
+- **IRayProvider**: Interface for getting Ray data (e.g., from camera).
+- **IPositionReceiver**: Interface for receiving screen/world positions.
 
-The package provides the following interfaces following strict naming guidelines:
+## 📦 Installation
 
-- **`IHitProvider`** - Provides access to a `RaycastHit` result via `Hit` property
-- **`IRayProvider`** - Provides access to a `Ray` for raycasting via `Ray` property
-- **`IPositionReceiver`** - Receives a `Vector2` position via `Position` property
+Install via Unity Package Manager (git URL).
 
-## Code Quality
+## 🚀 Usage
 
-This package follows strict naming guidelines from AGENTS.md:
-- ✅ **Descriptive interface names**: `IHitProvider` (not `IRaycastHitGet`)
-- ✅ **Descriptive properties**: `Hit`, `Ray`, `Position` (not generic `Value`)
-- ✅ **Pronounceable**: All names read naturally
-- ✅ **Searchable**: No cryptic abbreviations
-- ✅ **Clear intent**: Interface names describe their purpose
+Implement these interfaces in your input handlers to allow systems (like Navigation) to be input-agnostic.
 
-## Installation
-
-```
-Window > Package Manager > + > Add package from git URL
-```
-```
-https://github.com/IAFahim/AV.InputAdapters.git
+```csharp
+public class MouseInput : MonoBehaviour, IPositionReceiver
+{
+    public Vector2 Position => Input.mousePosition;
+}
 ```
 
-## License
+## ⚠️ Status
 
-MIT License - see [LICENSE.md](LICENSE.md) for details.
-
-## Author
-
-**IAFahim** - [GitHub](https://github.com/IAFahim)
+- 🧪 **Tests**: Missing.
+- 📘 **Samples**: None.

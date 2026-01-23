@@ -1,7 +1,7 @@
 {
   "name": "com.av.inputadapters",
   "version": "1.0.0",
-  "displayName": "AV.InputAdapters",
+  "displayName": "AV InputAdapters",
   "description": "Input adapter foundation package for Unity - placeholder for future input system integrations",
   "unity": "2022.3",
   "author": {
@@ -17,5 +17,9 @@
   "license": "MIT",
   "category": "Utilities",
   "dependencies": {},
-  "samples": []
+  "samples": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/IAFahim/AV.InputAdapters"
+  }
 }
